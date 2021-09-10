@@ -1,5 +1,6 @@
 package io.github.fallOut015.demigods;
 
+import io.github.fallOut015.demigods.world.item.ItemsDemigods;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -14,12 +15,14 @@ import org.apache.logging.log4j.Logger;
 @Mod(MainDemigods.MODID)
 public class MainDemigods {
     public static final String MODID = "demigods";
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
 
     public MainDemigods() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
+
+        ItemsDemigods.register(FMLJavaModLoadingContext.get().getModEventBus());
 
         MinecraftForge.EVENT_BUS.register(this);
     }

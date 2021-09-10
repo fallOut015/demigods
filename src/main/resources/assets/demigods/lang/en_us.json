@@ -1,0 +1,34 @@
+{
+  "itemGroup.demigods" : "Demigods",
+
+
+
+  "item.demigods.scroll" : "Scroll",
+  "item.demigods.scroll.aphrodite" : "Scroll of Love",
+  "item.demigods.scroll.apollo" : "Scroll of Healing",
+  "item.demigods.scroll.ares" : "Scroll of War",
+  "item.demigods.scroll.artemis" : "Scroll of the Hunt",
+  "item.demigods.scroll.athena" : "Scroll of Wisdom",
+  "item.demigods.scroll.demeter" : "Scroll of Harvest",
+  "item.demigods.scroll.hephaestus" : "Scroll of Fire",
+  "item.demigods.scroll.hera" : "Scroll of Marriage",
+  "item.demigods.scroll.hermes" : "Scroll of Travel",
+  "item.demigods.scroll.hestia" : "Scroll of Hearth",
+  "item.demigods.scroll.poseidon" : "Scroll of The Sea",
+  "item.demigods.scroll.zeus" : "Scroll of Lightning",
+
+
+
+  "god.aphrodite.name" : "Aphrodite",
+  "god.apollo.name" : "Apollo",
+  "god.ares.name" : "Ares",
+  "god.artemis.name" : "Artemis",
+  "god.athena.name" : "Athena",
+  "god.demeter.name" : "Demeter",
+  "god.hephaestus.name" : "Hephaestus",
+  "god.hera.name" : "Hera",
+  "god.hermes.name" : "Hermes",
+  "god.hestia.name" : "Hestia",
+  "god.poseidon.name" : "Poseidon",
+  "god.zeus.name" : "Zeus"
+}
