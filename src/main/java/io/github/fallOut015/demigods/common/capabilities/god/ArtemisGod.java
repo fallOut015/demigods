@@ -1,4 +1,4 @@
-package io.github.fallOut015.demigods.common.capabilities;
+package io.github.fallOut015.demigods.common.capabilities.god;
 
 public class ArtemisGod extends God {
     public ArtemisGod() {

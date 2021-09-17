@@ -1,4 +1,4 @@
-package io.github.fallOut015.demigods.common.capabilities;
+package io.github.fallOut015.demigods.common.capabilities.god;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;

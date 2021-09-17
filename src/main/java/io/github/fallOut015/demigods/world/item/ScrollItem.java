@@ -1,7 +1,8 @@
 package io.github.fallOut015.demigods.world.item;
 
 import io.github.fallOut015.demigods.MainDemigods;
-import io.github.fallOut015.demigods.common.capabilities.God;
+import io.github.fallOut015.demigods.common.capabilities.CapabilitiesDemigods;
+import io.github.fallOut015.demigods.common.capabilities.god.God;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.NonNullList;
 import net.minecraft.network.chat.Component;
@@ -40,6 +41,10 @@ public class ScrollItem extends Item {
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
         if(!level.isClientSide()) {
+            player.getCapability(CapabilitiesDemigods.ABILITIES).ifPresent(abilities -> {
+                abilities.setIsImmortal(true);
+                abilities.setIchor(100);
+            });
             MainDemigods.LOGGER.info("Your parent god is " + ScrollItem.getGod(player.getItemInHand(interactionHand)).getTranslatedName() + "!");
         }
         return super.use(level, player, interactionHand);
