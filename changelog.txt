@@ -1,3 +1,50 @@
+Build: 1.17.1-37.0.67 - Fri Sep 17 20:26:19 GMT 2021
+	oriondevelopment:
+		Add the missing patch for ItemStack for last build. (#8085)
+
+=========
+Build: 1.17.1-37.0.66 - Fri Sep 17 18:23:28 GMT 2021
+	oriondevelopment:
+		Support Lazy capabilities on itemstacks, for better ItemStack copy performance. (#7945)
+
+=========
+Build: 1.17.1-37.0.65 - Fri Sep 17 00:11:21 GMT 2021
+	gigaherz:
+		Fix EntityJoinWorldEvent not firing as expected: (#8033)
+		
+		- Fix entities loaded from disk not getting the event.
+		- Fix vehicles with passengers getting the event twice.
+
+=========
+Build: 1.17.1-37.0.64 - Thu Sep 16 23:54:41 GMT 2021
+	sciwhiz12:
+		Re-add patch to release buffer in custom payload packet (#8042)
+
+	noeppi-noeppi:
+		Propagate all arguments passed to the server start scripts to the game (#8060)
+
+=========
+Build: 1.17.1-37.0.62 - Thu Sep 16 23:37:31 GMT 2021
+	ichttt:
+		Remove old Log4j thread cache invalidation (#8068)
+
+=========
+Build: 1.17.1-37.0.61 - Wed Sep 15 19:09:18 GMT 2021
+	lexmanos:
+		Fix pick-block for items that map to multiple blocks. Closes #8080
+
+=========
+Build: 1.17.1-37.0.60 - Tue Sep 14 23:54:46 GMT 2021
+	gigaherz:
+		Update nashorn to 15.3, which fixes crashing when run on Java 17.
+		Please note that due to https://bugs.mojang.com/browse/MCL-18306, the vanilla launcher will not let you use Java 17 yet without workarounds.
+
+=========
+Build: 1.17.1-37.0.59 - Sun Sep 12 05:20:54 GMT 2021
+	sizableshrimp:
+		Add mixin full release to install list. (#8076)
+
+=========
 Build: 1.17.1-37.0.58 - Wed Sep 08 20:22:44 GMT 2021
 	sciwhiz12:
 		Add new tool action for shield blocking, replacing `IForgeItem#isShield` (#8055)
